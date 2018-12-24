@@ -572,7 +572,9 @@ let g:vim_markdown_json_frontmatter = 1
 
 " =================== vim-airline ========================
 
-let g:airline_theme='solarized'
+"let g:airline_theme='solarized'
+"let g:airline_theme='bubblegum'
+let g:airline_theme='luna'
 
 " set to use powerline fonts when not in a ssh session
 let g:remoteSession = ($STY == "")
@@ -599,3 +601,10 @@ let g:rust_clip_command = 'xclip -selection clipboard'
 let g:terraform_fmt_on_save=1
 
 " vim:ts=2:sw=2:et
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+nnoremap <C-N> :bn<CR>
+nnoremap <C-P> :bp<CR>
